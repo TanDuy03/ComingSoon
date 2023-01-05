@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2020/08/28/21/26/lighthouse-5525698_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper h1{
+    font-family: 'Lobster Two', cursive;
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+
+#clock-times{
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: 120px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#clock-times .items{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9A32C;
+    text-align: center;
+    -webkit-box-shadow: 4px -2px 19px 0px rgba(0,0,0,0.59); 
+    box-shadow: 4px -2px 19px 0px rgba(0,0,0,0.59);
+}
+
+#clock-times .items{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 10px;
+}
+
+.items span{
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+.items .title{
+    font-size: 25px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    #clock-times{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 120px 120px;
+    }
+}
